@@ -23,8 +23,8 @@ table.table
       tr
         td = trip.origin
         td = trip.destination
-        td = trip.departure
-        td = trip.arrival
+        td = readable_time(trip.departure)
+        td = readable_time(trip.arrival)
         td = trip.aeroplane.plane_type
         td = link_to 'Show', trip, class:'btn btn-sm btn-info'
         td = link_to 'Book Tickets', {:controller => "tickets", :action => "new", :trip_id => trip.id} , class: 'btn btn-sm btn-success'

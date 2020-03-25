@@ -116,3 +116,16 @@ background-color: rgb(241, 161, 161);
     color: teal;
     margin-top: 100px;
 }
+.formstyle{
+   
+    
+    border: teal 1px solid;
+    border-radius: 20px;
+    width: 50%;
+    margin: 100px auto;
+    padding: 10px;
+}
+.fieldstyle{
+    padding: 10px;
+    margin:10px;
+}

@@ -10,38 +10,39 @@
     </ul>
 </div>
 <% end %>
+<div class="formstyle">
+    <div class="field">
+        <%= form.label :aeroplane_id %>
+        <%= form.collection_select :aeroplane_id,Aeroplane.order(:plane_type), :id,:plane_type%>
+    </div>
 
-<div class="field">
-    <%= form.label :aeroplane_id %>r
-    <%= form.collection_select :aeroplane_id,Aeroplane.order(:plane_type), :id,:plane_type%>
-</div>
+    <div class="field">
+        <%= form.label :origin %>
+        <%= form.text_field :origin ,class:"form-control fieldstyle" %>
+    </div>
 
-<div class="field">
-    <%= form.label :origin %>
-    <%= form.text_field :origin %>
-</div>
+    <div class="field">
+        <%= form.label :destination %>
+        <%= form.text_field :destination ,class:"form-control fieldstyle" %>
+    </div>
 
-<div class="field">
-    <%= form.label :destination %>
-    <%= form.text_field :destination %>
-</div>
+    <div class="field">
+        <%= form.label :departure %>
+        <%= form.time_select :departure,class:"form-control"  %>
+    </div>
 
-<div class="field">
-    <%= form.label :departure %>
-    <%= form.time_select :departure %>
-</div>
+    <div class="field">
+        <%= form.label :arrival %>
+        <%= form.time_select :arrival,class:"form-control"  %>
+    </div>
 
-<div class="field">
-    <%= form.label :arrival %>
-    <%= form.time_select :arrival %>
-</div>
+    <div class="field">
+        <%= form.label :date %>
+        <%= form.date_select :date ,class:"form-control" %>
+    </div>
 
-<div class="field">
-    <%= form.label :date %>
-    <%= form.date_select :date %>
-</div>
-
-<div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+        <%= form.submit %>
+    </div>
 </div>
 <% end %>

@@ -6,17 +6,10 @@
         - @aeroplane.errors.full_messages.each do |message|
           li = message
 
-  table class="form-new-aeroplane"
+  table.table
+    
     tr
-      td
-      td
-      td
-    tr
-      td
-      td
-      td
-    tr
-      td
+      
       td
         .field
           = f.label :plane_type
@@ -24,7 +17,10 @@
           = f.text_field :plane_type,  class:"form-control"
         br
         
-      td
+      
+      
+    tr
+
       td
         .field
           = f.label :total_seats
@@ -33,7 +29,6 @@
         br
         
       td
-    tr
       td
         .field
           = f.label :first_class_rows
@@ -74,5 +69,6 @@
           br
           = f.text_field :ec_fare,  class:"form-control"
   br
+
   .actions-create_aeroplane_button = f.submit class:"btn btn-dark text-white"
   br

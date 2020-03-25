@@ -1,3 +1,5 @@
+<br>
+<br>
 <p id="notice"><%= notice %></p>
 
 <h1>Aeroplanes</h1>
@@ -34,9 +36,9 @@
             <td><%= aeroplane.ec_row %></td>
             <td><%= aeroplane.ec_column %></td>
             <td><%= aeroplane.ec_fare %></td>
-            <td><%= link_to 'Show', aeroplane %></td>
-            <td><%= link_to 'Edit', edit_aeroplane_path(aeroplane) %></td>
-            <td><%= link_to 'Destroy', aeroplane, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Show', aeroplane,class:"btn btn-warning"  %></td>
+            <td><%= link_to 'Edit', edit_aeroplane_path(aeroplane) ,class:"btn btn-primary" %></td>
+            <td><%= link_to 'Destroy', aeroplane, method: :delete, data: { confirm: 'Are you sure?' } ,class:"btn btn-danger" %></td>
         </tr>
         <% end %>
     </tbody>
@@ -44,4 +46,4 @@
 
 <br>
 
-<%= link_to 'New Aeroplane', new_aeroplane_path %>
+<%= link_to 'New Aeroplane', new_aeroplane_path ,class:"btn btn-warning" %>

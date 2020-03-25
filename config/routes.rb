@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   post '/trips/search' => 'trips#search'
   resources :tickets
   resources :trips
-  resources :passengers
   resources :aeroplanes
   get 'aeroplanes/homepage'
   devise_for :users
