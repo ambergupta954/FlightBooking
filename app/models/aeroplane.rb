@@ -18,7 +18,7 @@ class Aeroplane < ApplicationRecord
     validate :check_seats
 
     def check_seats
-        if fc_row != nil && fc_columns != nil && bc_row != nil && bc_column != nil 
+        if fc_row != nil && fc_column != nil && bc_row != nil && bc_column != nil 
           seat_count = (fc_row * fc_column) + (bc_row * bc_column) + (ec_row * ec_column)
           if seats != seat_count
              errors.add(:seats, "Please enter correct number of passenger seats")
