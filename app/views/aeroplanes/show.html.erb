@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Plane type:</strong>
+  <%= @aeroplane.plane_type %>
+</p>
+
+<p>
+  <strong>Seats:</strong>
+  <%= @aeroplane.seats %>
+</p>
+
+<p>
+  <strong>Bc row:</strong>
+  <%= @aeroplane.bc_row %>
+</p>
+
+<p>
+  <strong>Bc column:</strong>
+  <%= @aeroplane.bc_column %>
+</p>
+
+<p>
+  <strong>Bc fare:</strong>
+  <%= @aeroplane.bc_fare %>
+</p>
+
+<p>
+  <strong>Fc row:</strong>
+  <%= @aeroplane.fc_row %>
+</p>
+
+<p>
+  <strong>Fc column:</strong>
+  <%= @aeroplane.fc_column %>
+</p>
+
+<p>
+  <strong>Fc fare:</strong>
+  <%= @aeroplane.fc_fare %>
+</p>
+
+<p>
+  <strong>Ec row:</strong>
+  <%= @aeroplane.ec_row %>
+</p>
+
+<p>
+  <strong>Ec column:</strong>
+  <%= @aeroplane.ec_column %>
+</p>
+
+<p>
+  <strong>Ec fare:</strong>
+  <%= @aeroplane.ec_fare %>
+</p>
+
+<%= link_to 'Edit', edit_aeroplane_path(@aeroplane) %> |
+<%= link_to 'Back', aeroplanes_path %>

@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Aeroplanes</h1>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>Plane type</th>
+            <th>Seats</th>
+            <th>Bc row</th>
+            <th>Bc column</th>
+            <th>Bc fare</th>
+            <th>Fc row</th>
+            <th>Fc column</th>
+            <th>Fc fare</th>
+            <th>Ec row</th>
+            <th>Ec column</th>
+            <th>Ec fare</th>
+            <th colspan="3"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @aeroplanes.each do |aeroplane| %>
+        <tr>
+            <td><%= aeroplane.plane_type %></td>
+            <td><%= aeroplane.seats %></td>
+            <td><%= aeroplane.bc_row %></td>
+            <td><%= aeroplane.bc_column %></td>
+            <td><%= aeroplane.bc_fare %></td>
+            <td><%= aeroplane.fc_row %></td>
+            <td><%= aeroplane.fc_column %></td>
+            <td><%= aeroplane.fc_fare %></td>
+            <td><%= aeroplane.ec_row %></td>
+            <td><%= aeroplane.ec_column %></td>
+            <td><%= aeroplane.ec_fare %></td>
+            <td><%= link_to 'Show', aeroplane %></td>
+            <td><%= link_to 'Edit', edit_aeroplane_path(aeroplane) %></td>
+            <td><%= link_to 'Destroy', aeroplane, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aeroplane', new_aeroplane_path %>

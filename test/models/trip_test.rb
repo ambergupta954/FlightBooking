@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AirplaneTest < ActiveSupport::TestCase
+class TripTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

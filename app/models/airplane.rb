@@ -1,2 +1,0 @@
-class Airplane < ApplicationRecord
-end

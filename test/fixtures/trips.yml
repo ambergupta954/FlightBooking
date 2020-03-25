@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  aeroplane: one
+  origin: MyString
+  destination: MyString
+  departure: 2020-03-22 18:02:13
+  arrival: 2020-03-22 18:02:13
+  date: 2020-03-22
+
+two:
+  aeroplane: two
+  origin: MyString
+  destination: MyString
+  departure: 2020-03-22 18:02:13
+  arrival: 2020-03-22 18:02:13
+  date: 2020-03-22

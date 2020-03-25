@@ -14,3 +14,105 @@
  *= require bootstrap.min
  *= require_self
  */
+
+ .seat-column{
+    display: inline-block;
+    }
+.seat-column input[type="radio"] {
+    
+opacity: 0;
+position: fixed;
+width: 0;
+}
+.seat-column label {
+    display: inline-block;
+    background-color: white;
+    font-size: 12px;
+    border: 1px dashed black;
+    border-radius: 4px;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+}
+.seat-column input[type="radio"]:checked + label {
+    background-color:rgb(245, 46, 20);
+    border-color: rgb(233, 102, 15);
+}
+.seat-column input[type="radio"]:focus + label {
+    border: 2px solid black;
+}
+.seat-column label:hover {
+    background-color: grey;
+  }
+.seat-column input[type="radio"]:disabled + label {
+background-color: rgb(241, 161, 161);
+&:hover{
+    cursor: not-allowed;
+}
+}
+.seating{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seating_arrangement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.business{
+    padding-left: 10px;
+    text-align: center;
+}
+.economy{
+    text-align: center;
+}
+.first_class{
+    text-align: center;
+}
+.select-seat-btn{
+    cursor: pointer;
+}
+
+*,*:before,*:after {
+    box-sizing: border-box;
+  }
+  
+  .navbar-nav { 
+    flex-direction: row;
+}
+.navbar{
+    margin-bottom: 0px !important;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 16px 20px -16px rgba(0,0,0,0.75);
+}
+.form-control{
+    width: 200px !important;
+    display: inline-block !important;
+}
+.welcome{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 5px;
+    border: tomato 1px solid;
+    border-radius: 20px;
+}
+.space{
+    margin: 0 10px 0 10px;
+}
+.title{
+    color: teal;
+    margin-top: 100px;
+}

@@ -1,0 +1,19 @@
+<div class="title">
+    <h1 class="mt-5">Book your Flight</h1>
+</div>
+<%= link_to "search flights" , trips_search_path,class:"btn btn-primary"%>
+<div>
+    <img src="/assets/plane.png">
+</div>
+<% if current_user %>
+<%= link_to "Sign out", destroy_user_session_path, method: :delete, class:"btn btn-danger" %>
+<%else%>
+<p class="lead">please register or sign in to continue</p>
+<%= link_to "sign up",new_user_registration_path,class:"btn btn-success"%>
+<%= link_to "sign in", new_user_session_path, class:"btn btn-primary" %>
+<%end%>
+<% if current_user != nil && current_user.admin == true %>
+<%= link_to "Create Aeroplane",  new_aeroplane_path %>
+<%= link_to "Create Trips",  new_trip_path %>
+<%else%>
+<%end%>

@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plane_type: MyString
+  seats: 1
+  bc_row: 1
+  bc_column: 1
+  bc_fare: 1
+  fc_row: 1
+  fc_column: 1
+  fc_fare: 1
+  ec_row: 1
+  ec_column: 1
+  ec_fare: 1
+
+two:
+  plane_type: MyString
+  seats: 1
+  bc_row: 1
+  bc_column: 1
+  bc_fare: 1
+  fc_row: 1
+  fc_column: 1
+  fc_fare: 1
+  ec_row: 1
+  ec_column: 1
+  ec_fare: 1

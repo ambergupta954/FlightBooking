@@ -1,0 +1,70 @@
+= form_for @aeroplane do |f|
+  - if @aeroplane.errors.any?
+    #error_explanation class="alert alert-danger"
+      h2 = "#{pluralize(@aeroplane.errors.count, "error")} prohibited this aeroplane from being saved:"
+      ul
+        - @aeroplane.errors.full_messages.each do |message|
+          li = message
+
+  table class="form-new-aeroplane"
+    tr
+      td
+      td
+      td
+    tr
+      td
+      td
+      td
+    tr
+      td
+      td
+        .field
+          = f.label :plane_type
+          br
+          = f.text_field :plane_type,  class:"form-control"
+        br
+        
+      td
+    tr
+      td
+        .field
+          = f.label :first_class_rows
+          br
+          = f.text_field :fc_row,  class:"form-control"
+        .field
+          = f.label :first_class_columns
+          br
+          = f.text_field :fc_column,  class:"form-control"
+        .field
+          = f.label :first_class_fare
+          br
+          = f.text_field :fc_fare,  class:"form-control"
+      td
+        .field
+          = f.label :business_rows
+          br
+          = f.text_field :bc_row,  class:"form-control"
+        .field
+          = f.label :business_columns
+          br
+          = f.text_field :bc_column ,  class:"form-control"
+        .field
+          = f.label :business_fare
+          br
+          = f.text_field :bc_fare    ,  class:"form-control"
+      td
+        .field
+          = f.label :economy_rows
+          br
+          = f.text_field :ec_row,  class:"form-control"
+        .field
+          = f.label :economy_columns
+          br
+          = f.text_field :ec_column,  class:"form-control"
+        .field
+          = f.label :economy_fare
+          br
+          = f.text_field :ec_fare,  class:"form-control"
+  br
+  .actions-create_aeroplane_button = f.submit class:"btn btn-dark text-white"
+  br
