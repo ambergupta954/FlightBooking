@@ -1,29 +1,32 @@
+<br>
+<br>
 <p id="notice"><%= notice %></p>
+<div class="formstyle">
+    <p>
+        <strong>Passenger:</strong>
+        <%= @ticket.passenger_id %>
+    </p>
 
-<p>
-  <strong>Passenger:</strong>
-  <%= @ticket.passenger_id %>
-</p>
+    <p>
+        <strong>Trip:</strong>
+        <%= @ticket.trip_id %>
+    </p>
 
-<p>
-  <strong>Trip:</strong>
-  <%= @ticket.trip_id %>
-</p>
+    <p>
+        <strong>Seat class:</strong>
+        <%= @ticket.seat_class %>
+    </p>
 
-<p>
-  <strong>Seat class:</strong>
-  <%= @ticket.seat_class %>
-</p>
+    <p>
+        <strong>Seat number:</strong>
+        <%= @ticket.seat_number %>
+    </p>
 
-<p>
-  <strong>Seat number:</strong>
-  <%= @ticket.seat_number %>
-</p>
+    <p>
+        <strong>Pnr:</strong>
+        <%= @ticket.pnr %>
+    </p>
+</div>
 
-<p>
-  <strong>Pnr:</strong>
-  <%= @ticket.pnr %>
-</p>
-
-<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
-<%= link_to 'Back', tickets_path %>
+<%= link_to 'Edit', edit_ticket_path(@ticket),class:"btn btn-warning" %> |
+<%= link_to 'Back', tickets_path ,class:"btn btn-danger"%>
